@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+    <img class="profile-image" src="assets/FormalPic.jpg">
+    <h1 style="font-size:24px">Anthony Barba</h1>
+
+    <span class="example-fill-remaining-space"></span>
+    
+    <div style="height:40px">
+        <span class="menu-items" *ngIf="menu">
+            <span class="menu-item" (click)="aboutScroll()">About</span>
+            <span class="menu-item" (click)="projectsScroll()">Projects</span>
+            <span class="menu-item" (click)="contactScroll()">Contact</span>
+        </span>
+        <i class="material-icons header-icon" (click)="toggleMenu()">dehaze</i>
+    </div>
+</mat-toolbar>
